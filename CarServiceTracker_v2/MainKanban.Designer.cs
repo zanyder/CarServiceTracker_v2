@@ -28,79 +28,182 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
-            listBox2 = new ListBox();
-            listBox3 = new ListBox();
+            listEstimates = new ListBox();
+            listInProgress = new ListBox();
+            listCompleted = new ListBox();
             lblEstimates = new Label();
-            label1 = new Label();
+            lblInProgress = new Label();
+            lblCompleted = new Label();
+            lblNewEstimate = new Button();
+            navPanel = new Panel();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            button4 = new Button();
+            navPanel.SuspendLayout();
             SuspendLayout();
             // 
-            // listBox1
+            // listEstimates
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.Location = new Point(68, 126);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(215, 424);
-            listBox1.TabIndex = 0;
+            listEstimates.FormattingEnabled = true;
+            listEstimates.Location = new Point(96, 128);
+            listEstimates.Name = "listEstimates";
+            listEstimates.Size = new Size(215, 424);
+            listEstimates.TabIndex = 0;
             // 
-            // listBox2
+            // listInProgress
             // 
-            listBox2.FormattingEnabled = true;
-            listBox2.Location = new Point(343, 126);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(215, 424);
-            listBox2.TabIndex = 1;
+            listInProgress.FormattingEnabled = true;
+            listInProgress.Location = new Point(371, 128);
+            listInProgress.Name = "listInProgress";
+            listInProgress.Size = new Size(215, 424);
+            listInProgress.TabIndex = 1;
             // 
-            // listBox3
+            // listCompleted
             // 
-            listBox3.FormattingEnabled = true;
-            listBox3.Location = new Point(615, 126);
-            listBox3.Name = "listBox3";
-            listBox3.Size = new Size(215, 424);
-            listBox3.TabIndex = 2;
+            listCompleted.FormattingEnabled = true;
+            listCompleted.Location = new Point(643, 128);
+            listCompleted.Name = "listCompleted";
+            listCompleted.Size = new Size(215, 424);
+            listCompleted.TabIndex = 2;
             // 
             // lblEstimates
             // 
             lblEstimates.AutoSize = true;
             lblEstimates.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblEstimates.Location = new Point(68, 92);
+            lblEstimates.Location = new Point(96, 94);
             lblEstimates.Name = "lblEstimates";
             lblEstimates.Size = new Size(112, 31);
             lblEstimates.TabIndex = 3;
             lblEstimates.Text = "Estimates";
             // 
-            // label1
+            // lblInProgress
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(422, 294);
-            label1.Name = "label1";
-            label1.Size = new Size(112, 31);
-            label1.TabIndex = 4;
-            label1.Text = "Estimates";
+            lblInProgress.AutoSize = true;
+            lblInProgress.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblInProgress.Location = new Point(371, 94);
+            lblInProgress.Name = "lblInProgress";
+            lblInProgress.Size = new Size(127, 31);
+            lblInProgress.TabIndex = 4;
+            lblInProgress.Text = "In Progress";
+            // 
+            // lblCompleted
+            // 
+            lblCompleted.AutoSize = true;
+            lblCompleted.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCompleted.Location = new Point(643, 94);
+            lblCompleted.Name = "lblCompleted";
+            lblCompleted.Size = new Size(127, 31);
+            lblCompleted.TabIndex = 5;
+            lblCompleted.Text = "Completed";
+            // 
+            // lblNewEstimate
+            // 
+            lblNewEstimate.Location = new Point(400, 570);
+            lblNewEstimate.Name = "lblNewEstimate";
+            lblNewEstimate.Size = new Size(141, 38);
+            lblNewEstimate.TabIndex = 6;
+            lblNewEstimate.Text = "New Estimate";
+            lblNewEstimate.UseVisualStyleBackColor = true;
+            // 
+            // navPanel
+            // 
+            navPanel.BackColor = Color.Gray;
+            navPanel.Controls.Add(button4);
+            navPanel.Controls.Add(button3);
+            navPanel.Controls.Add(button2);
+            navPanel.Controls.Add(button1);
+            navPanel.Dock = DockStyle.Top;
+            navPanel.Location = new Point(0, 0);
+            navPanel.Name = "navPanel";
+            navPanel.Size = new Size(957, 39);
+            navPanel.TabIndex = 8;
+            // 
+            // button1
+            // 
+            button1.Dock = DockStyle.Left;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(0, 0);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 39);
+            button1.TabIndex = 0;
+            button1.Text = "Workflow";
+            button1.TextAlign = ContentAlignment.TopCenter;
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Dock = DockStyle.Left;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Location = new Point(94, 0);
+            button2.Name = "button2";
+            button2.Size = new Size(94, 39);
+            button2.TabIndex = 1;
+            button2.Text = "Customers";
+            button2.TextAlign = ContentAlignment.TopCenter;
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            button3.Dock = DockStyle.Left;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Location = new Point(188, 0);
+            button3.Name = "button3";
+            button3.Size = new Size(94, 39);
+            button3.TabIndex = 2;
+            button3.Text = "Services";
+            button3.TextAlign = ContentAlignment.TopCenter;
+            button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            button4.Dock = DockStyle.Left;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Location = new Point(282, 0);
+            button4.Name = "button4";
+            button4.Size = new Size(94, 39);
+            button4.TabIndex = 3;
+            button4.Text = "Invoices";
+            button4.TextAlign = ContentAlignment.TopCenter;
+            button4.UseVisualStyleBackColor = true;
             // 
             // MainKanban
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(957, 618);
-            Controls.Add(label1);
+            Controls.Add(navPanel);
+            Controls.Add(lblNewEstimate);
+            Controls.Add(lblCompleted);
+            Controls.Add(lblInProgress);
             Controls.Add(lblEstimates);
-            Controls.Add(listBox3);
-            Controls.Add(listBox2);
-            Controls.Add(listBox1);
+            Controls.Add(listCompleted);
+            Controls.Add(listInProgress);
+            Controls.Add(listEstimates);
             Name = "MainKanban";
             Text = "MainKanban";
+            navPanel.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private ListBox listBox1;
-        private ListBox listBox2;
-        private ListBox listBox3;
+        private ListBox listEstimates;
+        private ListBox listInProgress;
+        private ListBox listCompleted;
         private Label lblEstimates;
-        private Label label1;
+        private Label lblInProgress;
+        private Label lblCompleted;
+        private Button lblNewEstimate;
+        private Panel navPanel;
+        private Button button3;
+        private Button button2;
+        private Button button1;
+        private Button button4;
     }
 }
