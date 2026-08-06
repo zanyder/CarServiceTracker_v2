@@ -49,12 +49,15 @@
             // 
             // btnNewEstimate
             // 
+            btnNewEstimate.BackColor = Color.RoyalBlue;
+            btnNewEstimate.FlatStyle = FlatStyle.Popup;
             btnNewEstimate.Location = new Point(83, 35);
             btnNewEstimate.Name = "btnNewEstimate";
             btnNewEstimate.Size = new Size(141, 38);
             btnNewEstimate.TabIndex = 13;
             btnNewEstimate.Text = "New Estimate";
-            btnNewEstimate.UseVisualStyleBackColor = true;
+            btnNewEstimate.UseVisualStyleBackColor = false;
+            btnNewEstimate.Click += btnNewEstimate_Click;
             // 
             // listInProgress
             // 
@@ -104,12 +107,14 @@
             // 
             // btnRefresh
             // 
+            btnRefresh.BackColor = SystemColors.ControlDark;
             btnRefresh.Location = new Point(406, 594);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(110, 38);
             btnRefresh.TabIndex = 14;
             btnRefresh.Text = "Refresh";
-            btnRefresh.UseVisualStyleBackColor = true;
+            btnRefresh.UseVisualStyleBackColor = false;
+            btnRefresh.Click += btnRefresh_Click;
             // 
             // button1
             // 

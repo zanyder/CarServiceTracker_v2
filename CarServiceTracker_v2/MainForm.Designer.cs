@@ -62,7 +62,7 @@
             btnInvoices.Text = "Invoices";
             btnInvoices.TextAlign = ContentAlignment.TopCenter;
             btnInvoices.UseVisualStyleBackColor = true;
-            btnInvoices.Click += this.btnInvoices_Click;
+            btnInvoices.Click += btnInvoices_Click;
             // 
             // btnServices
             // 

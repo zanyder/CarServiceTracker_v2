@@ -1,6 +1,6 @@
 ﻿namespace CarServiceTracker_v2.Components
 {
-    partial class CustomersView
+    partial class CreateCustomer
     {
         /// <summary> 
         /// Required designer variable.

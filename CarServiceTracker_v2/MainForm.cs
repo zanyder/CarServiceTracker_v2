@@ -23,7 +23,7 @@ namespace CarServiceTracker_v2
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
-            ShowControl(new CustomersView());
+            ShowControl(new CreateCustomer());
         }
 
         private void btnServices_Click(object sender, EventArgs e)

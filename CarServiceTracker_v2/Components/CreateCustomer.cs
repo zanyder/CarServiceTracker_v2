@@ -1,8 +1,8 @@
 ﻿namespace CarServiceTracker_v2.Components
 {
-    public partial class CustomersView : UserControl
+    public partial class CreateCustomer : UserControl
     {
-        public CustomersView()
+        public CreateCustomer()
         {
             InitializeComponent();
         }
