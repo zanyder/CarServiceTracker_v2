@@ -21,6 +21,9 @@ namespace CarServiceTracker_v2.Models
         [MaxLength(200)]
         public string? Email { get; set; }
 
-        public ICollection<Car>? Cars { get; set; }
+        [MaxLength(30)]
+        public string? DriversLicenseNumber { get; set; }
+
+        public ICollection<Car>? Cars { get;  set; }
     }
 }

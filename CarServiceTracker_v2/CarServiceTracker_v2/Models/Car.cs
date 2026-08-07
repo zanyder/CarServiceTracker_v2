@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CarServiceTracker_v2.Models
 {
@@ -21,6 +22,7 @@ namespace CarServiceTracker_v2.Models
         public string? VIN { get; set; }
 
         // Owner
+        [ForeignKey(nameof(Customer))]
         public int? OwnerId { get; set; }
         public Customer? Owner { get; set; }
 
