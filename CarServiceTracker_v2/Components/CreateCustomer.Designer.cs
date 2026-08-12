@@ -39,6 +39,7 @@
             lblLicense = new Label();
             maskedTextBox1 = new MaskedTextBox();
             txtPhoneNumber = new MaskedTextBox();
+            lblCreateCustomer = new Label();
             SuspendLayout();
             // 
             // lblFirstName
@@ -132,10 +133,21 @@
             txtPhoneNumber.Size = new Size(151, 27);
             txtPhoneNumber.TabIndex = 28;
             // 
-            // Customers
+            // lblCreateCustomer
+            // 
+            lblCreateCustomer.AutoSize = true;
+            lblCreateCustomer.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCreateCustomer.Location = new Point(338, 131);
+            lblCreateCustomer.Name = "lblCreateCustomer";
+            lblCreateCustomer.Size = new Size(247, 31);
+            lblCreateCustomer.TabIndex = 29;
+            lblCreateCustomer.Text = "Enter Customer Details";
+            // 
+            // CreateCustomer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(lblCreateCustomer);
             Controls.Add(txtPhoneNumber);
             Controls.Add(maskedTextBox1);
             Controls.Add(lblLicense);
@@ -147,7 +159,7 @@
             Controls.Add(lblLastName);
             Controls.Add(txtFirstName);
             Controls.Add(lblFirstName);
-            Name = "Customers";
+            Name = "CreateCustomer";
             Size = new Size(975, 665);
             ResumeLayout(false);
             PerformLayout();
@@ -169,5 +181,6 @@
         private Label lblLicense;
         private MaskedTextBox maskedTextBox1;
         private MaskedTextBox txtPhoneNumber;
+        private Label lblCreateCustomer;
     }
 }

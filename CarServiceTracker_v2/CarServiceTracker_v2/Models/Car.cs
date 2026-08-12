@@ -26,6 +26,6 @@ namespace CarServiceTracker_v2.Models
         public int? OwnerId { get; set; }
         public Customer? Owner { get; set; }
 
-        public ICollection<ServiceRecord>? ServiceRecords { get; set; }
+        public ICollection<Invoice>? ServiceRecords { get; set; }
     }
 }

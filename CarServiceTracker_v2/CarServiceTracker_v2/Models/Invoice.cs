@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CarServiceTracker_v2.Models
 {
-    public class ServiceRecord
+    public class Invoice
     {
         [Key]
         public int Id { get; set; }

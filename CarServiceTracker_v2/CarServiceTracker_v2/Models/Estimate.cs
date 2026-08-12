@@ -25,7 +25,8 @@ namespace CarServiceTracker_v2.CarServiceTracker_v2.Models
         [Required]
         public DateTimeOffset CreationDate { get; } = DateTimeOffset.UtcNow;
 
-        // public ServiceList<Service> Services { get; }
+        public ServiceList<Invoice> Services { get; }
+
         [Required]
         [Range(0, double.MaxValue, ErrorMessage = "Estimate cost must be a non-negative value.")]
         public double EstimateCost { get; set; }
